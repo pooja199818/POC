@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+<script type="text/javascript">
+   var name =prompt("what is your name ? ");
+    if(name!=""){
+      document.write("HELLO  "  +name + " .");
+    // else{
+    //   document.write("HELLO  "  +" .");  
+     }
+ </script>
+
+<h1>SELECT YOUR PREFERED CLOUD PROVIDER !!!!</h1>
+  <form action="{{url_for('second')}}" method = "POST">
+  
+  <input type="checkbox">
+  <label> AWS</label><br>
+  <input type="checkbox">
+  <label> AZURE</label><br>
+  <input type="checkbox">
+  <label>GCP</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
