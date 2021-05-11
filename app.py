@@ -6,11 +6,11 @@ app = Flask(__name__)
 def first():
     return render_template('first.html')
 
-@app.route('/second')
+@app.route('/second', methods=['POST'])
 def second():
     return render_template('second.html')    
 
-@app.route('/third', methods=['POST'])
+@app.route('/third')
 def third():
     return render_template('third.html') 
 
